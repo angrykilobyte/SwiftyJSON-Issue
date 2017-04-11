@@ -16,6 +16,8 @@
 		4DB95A5E1E9D1B2800CBDC4B /* IssueFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB95A5C1E9D1B2800CBDC4B /* IssueFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB95A611E9D1B2800CBDC4B /* IssueFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB95A5A1E9D1B2800CBDC4B /* IssueFramework.framework */; };
 		4DB95A621E9D1B2800CBDC4B /* IssueFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB95A5A1E9D1B2800CBDC4B /* IssueFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DB95A6A1E9D1BD000CBDC4B /* Pods_Issue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB95A681E9D1BD000CBDC4B /* Pods_Issue.framework */; };
+		4DB95A6B1E9D1BD000CBDC4B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB95A691E9D1BD000CBDC4B /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		4DB95A5A1E9D1B2800CBDC4B /* IssueFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IssueFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB95A5C1E9D1B2800CBDC4B /* IssueFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssueFramework.h; sourceTree = "<group>"; };
 		4DB95A5D1E9D1B2800CBDC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB95A671E9D1B9800CBDC4B /* IssuePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IssuePlayground.playground; sourceTree = "<group>"; };
+		4DB95A681E9D1BD000CBDC4B /* Pods_Issue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Issue.framework; path = "Pods/../build/Debug-iphoneos/Pods_Issue.framework"; sourceTree = "<group>"; };
+		4DB95A691E9D1BD000CBDC4B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "build/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		5D5FCC82F036A1D1ABD8E895 /* Pods-Issue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Issue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Issue/Pods-Issue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB95A6A1E9D1BD000CBDC4B /* Pods_Issue.framework in Frameworks */,
+				4DB95A6B1E9D1BD000CBDC4B /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +108,7 @@
 		4DB95A421E9D19B200CBDC4B /* Issue */ = {
 			isa = PBXGroup;
 			children = (
+				4DB95A671E9D1B9800CBDC4B /* IssuePlayground.playground */,
 				4DB95A431E9D19B200CBDC4B /* AppDelegate.swift */,
 				4DB95A451E9D19B200CBDC4B /* ViewController.swift */,
 				4DB95A471E9D19B200CBDC4B /* Main.storyboard */,
@@ -132,6 +140,8 @@
 		F43A076D99952AF5FCEC2EDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DB95A681E9D1BD000CBDC4B /* Pods_Issue.framework */,
+				4DB95A691E9D1BD000CBDC4B /* SwiftyJSON.framework */,
 				38EE55A310AEAD879D4520C0 /* Pods_Issue.framework */,
 			);
 			name = Frameworks;
@@ -480,6 +490,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphonesimulator/SwiftyJSON",
+				);
 				INFOPLIST_FILE = IssueFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -502,6 +517,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphonesimulator/SwiftyJSON",
+				);
 				INFOPLIST_FILE = IssueFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
