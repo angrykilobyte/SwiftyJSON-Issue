@@ -1,0 +1,11 @@
+### OSX ###
+.DS_Store
+
+### iOS ###
+build/
+DerivedData
+
+## Various settings
+*.pbxuser
+xcuserdata
+
