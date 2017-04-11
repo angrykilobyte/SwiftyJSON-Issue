@@ -45,7 +45,7 @@ other package managers in this list:
 
 ### Project that demonstrates the issue
 
-1. Download [Issue](http://sscce.org/)
+1. Download [Issue](https://github.com/angrykilobyte/SwiftyJSON-Issue)
 2. Open `Issue.wcworkspace`.
 3. Build the `IssueFramework` scheme.
 3. Open `IssuePlayground.playground` from the workspace.
